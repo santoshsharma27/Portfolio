@@ -22,8 +22,7 @@ function Project() {
               />
             </a>
             <div className="text-center p-5 text-base font-semibold text-white">
-              <p>Fast React Pizza App using React.js</p>
-              <p>react.js, Parcel.js</p>
+              <p>Fast React Pizza App using React.js, Tailwindcss</p>
             </div>
           </div>
         </div>
@@ -41,27 +40,25 @@ function Project() {
               />
             </a>
             <div className="text-center p-5 text-base font-semibold text-white">
-              <p>Food Fire App using React.js</p>
-              <p>react.js, Parcel.js</p>
+              <p>Food Fire App using React.js, Tailwindcss</p>
             </div>
           </div>
         </div>
         <div className="sm:h-[300px] sm:w-[350px] bg-black rounded-2xl h-64 w-64 mb-7">
           <div className="p-5">
             <a
-              href="https://fast-reactpizza.netlify.app/"
+              href="https://netflix-gpt4.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
                 className="p-4 rounded-2xl border-red-600 border-2"
-                src="/images/FastReact.png"
-                alt="Fast React"
+                src="/images/Netflix.png"
+                alt="Netflix"
               />
             </a>
             <div className="text-center p-5 text-base font-semibold text-white">
-              <p>Fast React Pizza App using React.js</p>
-              <p>react.js, Parcel.js</p>
+              <p>Netflix-GPT using React.js, Tailwindcss</p>
             </div>
           </div>
         </div>

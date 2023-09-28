@@ -40,18 +40,6 @@ function Skills() {
               height="80"
             />
           </a>
-          <a
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="./images/typescript.png"
-              alt="TypeScript"
-              width="80"
-              height="80"
-            />
-          </a>
           <a href="https://redux.js.org" target="_blank" rel="noreferrer">
             <img src="./images/redux.png" alt="redux" width="80" height="80" />
           </a>

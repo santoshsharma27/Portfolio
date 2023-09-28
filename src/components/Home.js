@@ -20,7 +20,7 @@ function Home() {
         <div className="pt-20 sm:space-x-8 space-x-5">
           <a
             className="px-5 py-4 rounded-xl bg-red-700 font-semibold tracking-wide text-white transition-colors duration-300 hover:bg-red-600 focus:bg-red-600 focus:outline-none focus:ring focus:ring-red-600 focus:ring-offset-2 disabled:cursor-not-allowed"
-            href="https://github.com/santoshsharma27"
+            href="https://drive.google.com/file/d/16mBl736IQT7IEA8ATEgjdUjaSdazLuLn/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >
