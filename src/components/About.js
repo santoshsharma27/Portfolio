@@ -8,7 +8,7 @@ function About() {
         </p>
       </div>
       <div className="sm:flex items-center justify-center sm:space-x-20 font-semibold text-lg">
-        <div className="pb-10">
+        <div className="pb-10 flex items-center justify-center">
           <img
             className="sm:rounded-2xl w-[300px] h-[300px] rounded-2xl"
             src="/images/Santosh.jpg"

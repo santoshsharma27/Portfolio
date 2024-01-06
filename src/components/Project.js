@@ -7,9 +7,9 @@ function Project() {
           -- <span className="text-red-600 px-2">check my work</span>--
         </p>
       </div>
-      <div className="sm:flex items-center justify-center sm:m-7 sm:space-x-7 pt-7 px-16">
+      <div className="sm:flex justify-center items-center sm:m-7 sm:space-x-7 pt-7 px-16">
         <div className="sm:h-[300px] sm:w-[350px] bg-black rounded-2xl h-64 w-64 mb-7">
-          <div className=" p-5">
+          <div className="p-5">
             <a
               href="https://fast-reactpizza.netlify.app/"
               target="_blank"

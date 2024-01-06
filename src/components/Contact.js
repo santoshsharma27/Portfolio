@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { HiMapPin, HiOutlineEnvelope, HiUser } from "react-icons/hi2";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -9,6 +11,13 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    toast.info("Form Submitted, will connect sortly", {
+      position: "top-center",
+    });
+    setName("");
+    setEmail("");
+    setSubject("");
+    setDescription("");
   }
 
   return (
@@ -20,7 +29,7 @@ function Contact() {
           --
         </p>
       </div>
-      <div className="sm:flex items-center justify-around wrap">
+      <div className="lg:flex items-center justify-around wrap">
         <div className="font-semibold text-lg mb-10">
           <div className="pt-5">Reach Out to me!</div>
           <p className="pt-5 pb-5">
@@ -106,9 +115,9 @@ function Contact() {
         <div>
           <div className="font-semibold">Message Me</div>
           <form className=" text-black" onSubmit={handleSubmit}>
-            <div className="sm:space-x-8 sm:py-5 mb-5 pt-5 space-y-8">
+            <div className="sm:py-5 pt-5 space-y-8">
               <input
-                className="px-5 py-3 rounded-md w-72"
+                className="px-5 py-3 rounded-md h-full w-full mr-2"
                 type="text"
                 placeholder="Name"
                 required
@@ -116,7 +125,7 @@ function Contact() {
                 onChange={(e) => setName(e.target.value)}
               />
               <input
-                className="px-5 py-3 rounded-md w-72"
+                className="px-5 py-3 rounded-md h-full w-full"
                 type="email"
                 placeholder="Email"
                 required
@@ -126,7 +135,7 @@ function Contact() {
             </div>
             <div className="py-5">
               <input
-                className="px-5 py-3 rounded-md sm:w-[610px] w-72"
+                className="px-5 py-3 rounded-md h-full w-full"
                 type="text"
                 placeholder="Subject"
                 required
@@ -136,7 +145,9 @@ function Contact() {
             </div>
             <div className="py-5">
               <textarea
-                className="px-5 py-3 rounded-md sm:w-[610px] sm:h-[200px] h-48 w-72"
+                cols="30"
+                rows="10"
+                className="px-5 py-3 rounded-md h-full w-full"
                 placeholder="Describe Project..."
                 required
                 value={description}
@@ -144,9 +155,10 @@ function Contact() {
               ></textarea>
             </div>
             <div className="py-5">
-              <button className="bg-red-700 px-5 py-3 rounded-lg font-semibold text-white">
+              <button className="bg-red-600 px-5 py-3 rounded-lg font-semibold text-white hover:bg-red-700">
                 Send Message
               </button>
+              <ToastContainer />
             </div>
           </form>
         </div>
