@@ -146,7 +146,7 @@ function Contact() {
             <div className="py-5">
               <textarea
                 cols="30"
-                rows="10"
+                rows="7"
                 className="px-5 py-3 rounded-md h-full w-full"
                 placeholder="Describe Project..."
                 value={description}

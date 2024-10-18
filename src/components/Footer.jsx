@@ -36,7 +36,7 @@ function Footer() {
       >
         Santosh Kumar Sharma
       </a>
-      <span className="px-1">&copy; 2023 All rights reserved</span>
+      <span className="px-1">&copy; 2024 All rights reserved</span>
 
       {/* Scroll to Top Button for Mobile */}
       {isVisible && (
@@ -46,7 +46,7 @@ function Footer() {
           style={{ display: window.innerWidth < 640 ? "block" : "none" }}
           title="Scroll to Top"
         >
-          &#8593; {/* Arrow Up Icon */}
+          &#8593;
         </button>
       )}
     </footer>

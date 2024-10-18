@@ -9,7 +9,7 @@ function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between bg-black text-white font-semibold sm:h-20 h-16 fixed w-screen shadow-md z-50 px-4 md:px-10">
+    <header className="flex items-center justify-between bg-black text-white font-bold sm:h-20 h-16 fixed w-screen shadow-md z-50 px-4 md:px-10">
       <div className="sm:tracking-widest font-bold text-[30px] transition-colors duration-300 hover:text-red-600">
         <a href="#home">
           Portfo<span className="text-red-600">lio.</span>
