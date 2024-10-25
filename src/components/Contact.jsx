@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { HiMapPin, HiOutlineEnvelope, HiUser } from "react-icons/hi2";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -10,29 +8,45 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [description, setDescription] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    toast.info("Form Submitted, will connect sortly", {
-      position: "top-center",
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-    setName("");
-    setEmail("");
-    setSubject("");
-    setDescription("");
-  }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (formData.name && formData.email && formData.message) {
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      // Set timer to hide submission message after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 3000);
+    }
+  };
 
   return (
     <div id="contact" className="bg-black sm:p-16 p-14 text-white">
       <div className="text-center m-4 font-semibold ">
         <p className="text-3xl">Contact me</p>
         <p>
-          -- <span className="text-red-600 px-2 text-lg">get in touch</span>
-          --
+          -- <span className="text-red-600 px-2 text-lg">get in touch</span> --
         </p>
       </div>
       <div className="lg:flex items-center justify-around wrap">
@@ -84,7 +98,6 @@ function Contact() {
                   </div>
                 </a>
               </div>
-
               <div>
                 <a
                   href="https://github.com/santoshsharma27"
@@ -111,52 +124,59 @@ function Contact() {
           </div>
         </div>
 
-        {/* Form Field  */}
+        {/* Form Field */}
         <div>
           <div className="font-semibold">Message Me</div>
-          <form className=" text-black" onSubmit={handleSubmit}>
+          {submitted && (
+            <p className="text-center text-white font-semibold pt-5">
+              Thank you for reaching out! We’ll get back to you soon.
+            </p>
+          )}
+          <form className="text-black" onSubmit={handleSubmit}>
             <div className="sm:py-5 pt-5 space-y-8">
               <input
-                className="px-5 py-3 rounded-md h-full w-full mr-2"
+                className="px-5 py-3 rounded-md w-full"
                 type="text"
+                name="name"
                 placeholder="Name"
                 required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={formData.name}
+                onChange={handleChange}
               />
               <input
-                className="px-5 py-3 rounded-md h-full w-full"
+                className="px-5 py-3 rounded-md w-full"
                 type="email"
+                name="email"
                 placeholder="Email"
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
             <div className="py-5">
               <input
-                className="px-5 py-3 rounded-md h-full w-full"
+                className="px-5 py-3 rounded-md w-full"
                 type="text"
+                name="subject"
                 placeholder="Subject"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
+                value={formData.subject}
+                onChange={handleChange}
               />
             </div>
             <div className="py-5">
               <textarea
-                cols="30"
+                className="px-5 py-3 rounded-md w-full"
+                name="message"
                 rows="7"
-                className="px-5 py-3 rounded-md h-full w-full"
                 placeholder="Describe Project..."
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
             </div>
             <div className="py-5">
               <button className="bg-red-600 px-5 py-3 rounded-lg font-semibold text-white hover:bg-red-700">
                 Send Message
               </button>
-              <ToastContainer />
             </div>
           </form>
         </div>
