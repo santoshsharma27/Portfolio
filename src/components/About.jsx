@@ -14,7 +14,7 @@ function About() {
       <div className="sm:flex items-center justify-center sm:space-x-20 font-semibold text-lg">
         <div className="pb-10 flex flex-col items-center justify-center">
           <img
-            className="sm:rounded-2xl w-[300px] h-[300px] rounded-2xl object-cover"
+            className="sm:rounded-2xl w-[300px] h-auto max-w-full rounded-2xl object-cover"
             src="/images/Santosh.jpg"
             alt="Santosh"
           />
