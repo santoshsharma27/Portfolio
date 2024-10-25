@@ -41,37 +41,35 @@ function Contact() {
           <p className="pt-5 pb-5">
             Discuss a Project or just want to say Hi? My inbox is open for all.
           </p>
-          <div className="flex items-center">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center mb-4">
             <span className="py-2 w-16 text-red-600 text-3xl">
               <HiUser />
             </span>
-
-            <div className="pt-2">
-              <div>Name</div>
-              <p>Santosh Kumar Sharma</p>
+            <div className="pt-2 lg:pl-2">
+              <div className="text-lg">Name</div>
+              <p className="text-base">Santosh Kumar Sharma</p>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center mb-4">
             <span className="py-2 w-16 text-red-600 text-3xl">
               <HiMapPin />
             </span>
-
-            <div className="pt-2">
-              <div>Address</div>
-              <p>Bangalore, India</p>
+            <div className="pt-2 lg:pl-2">
+              <div className="text-lg">Address</div>
+              <p className="text-base">Bangalore, India</p>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center mb-4">
             <span className="py-2 w-16 text-red-600 text-3xl">
               <HiOutlineEnvelope />
             </span>
-
-            <div className="pt-2">
-              <div>Email</div>
-              <p>santosh37kr@gmail.com</p>
+            <div className="pt-2 lg:pl-2">
+              <div className="text-lg">Email</div>
+              <p className="text-base">santosh37kr@gmail.com</p>
             </div>
           </div>
 
+          {/* Social Icons */}
           <div className="py-10 pb-5">
             <p className="pb-5">Stay Connected</p>
             <div className="flex items-center space-x-2">
@@ -113,6 +111,7 @@ function Contact() {
           </div>
         </div>
 
+        {/* Form Field  */}
         <div>
           <div className="font-semibold">Message Me</div>
           <form className=" text-black" onSubmit={handleSubmit}>

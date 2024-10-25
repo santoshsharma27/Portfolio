@@ -1,6 +1,6 @@
 function Project() {
   return (
-    <div className="sm:pt-16 pt-16 pb-20" id="projects">
+    <div className="sm:pt-32 pt-16 pb-20" id="projects">
       <div className="text-center text-2xl font-semibold">
         <p>My Projects</p>
         <p className="text-lg">
@@ -46,7 +46,7 @@ function Project() {
           <div className="bg-black rounded-2xl transition-transform duration-300 hover:bg-gray-800">
             <div className="p-5 flex flex-col justify-between h-full items-center">
               <a
-                href="https://food-fire.netlify.app/"
+                href="https://swiggy-sigma.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,7 +61,7 @@ function Project() {
                   Food Fire App using React.js, Tailwindcss
                 </p>
                 <a
-                  href="https://food-fire.netlify.app/"
+                  href="https://swiggy-sigma.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 transition duration-300"

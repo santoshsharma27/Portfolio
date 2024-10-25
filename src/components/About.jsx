@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function About() {
   return (
     <div id="about" className="sm:p-14 p-10">
-      <div className="text-center m-4 font-semibold text-3xl">
+      <div className="text-center m-4 font-semibold text-3xl pt-8">
         <p>About Me</p>
       </div>
       <div className="sm:flex items-center justify-center sm:space-x-20 font-semibold text-lg">
@@ -19,7 +19,7 @@ function About() {
             alt="Santosh"
           />
 
-          <div className="flex justify-start w-[300px] mt-2">
+          <div className="flex justify-start w-[300px] pl-7 pt-2 sm:pl-0">
             <a
               href="https://www.linkedin.com/in/santoshsharma37/"
               target="_blank"

@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <div className="bg-black text-white py-16" id="skills">
+    <div className="bg-black text-white sm:pt-32 pt-16" id="skills">
       <div className="text-center text-3xl font-semibold mb-6">
         <p>My Skills</p>
         <p className="text-lg mt-2">
