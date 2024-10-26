@@ -46,7 +46,7 @@ function Project() {
           <div className="bg-black rounded-2xl transition-transform duration-300 hover:bg-gray-800">
             <div className="p-5 flex flex-col justify-between h-full items-center">
               <a
-                href="https://swiggy-sigma.vercel.app/"
+                href="https://swiggy-ochre.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,7 +61,7 @@ function Project() {
                   Food Fire App using React.js, Tailwindcss
                 </p>
                 <a
-                  href="https://swiggy-sigma.vercel.app/"
+                  href="https://swiggy-ochre.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 transition duration-300"
